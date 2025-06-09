@@ -4,6 +4,7 @@ import mongoose from 'mongoose'
 import { connectDB } from './config/database.config.js'
 import authRoutes from './routes/auth.route.js'
 import profileRoutes from './routes/profile.route.js'
+import entryRoutes from './routes/notes.route.js'
 import cookieParser from 'cookie-parser'
 import { userAuth } from './middlewares/auth.middleware.js'
 const app=express()
@@ -13,9 +14,11 @@ app.use(express.json());
 app.use(cookieParser())
 
 connectDB()
+
+
 app.use('/',authRoutes)
 app.use('/',profileRoutes)
-
+app.use('/',entryRoutes)
 app.get('/',(req,res)=>{
     res.send('Hello world')
 })

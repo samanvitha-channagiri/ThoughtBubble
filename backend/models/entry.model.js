@@ -1,7 +1,12 @@
 import mongoose from 'mongoose'
 
 const entrySchema=new mongoose.Schema({
-    tagline:{
+    user:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User',
+        required:true
+    },
+    tagLine:{
         type:String,
         required:true,
         maxLength:100
