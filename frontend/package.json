@@ -11,22 +11,33 @@
   },
   "dependencies": {
     "react": "^19.0.0",
+<<<<<<< HEAD
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.3"
+=======
+    "react-dom": "^19.0.0"
+>>>>>>> f859783cb6e3d30e571260085a8540861c3d6e75
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+<<<<<<< HEAD
     "autoprefixer": "^10.4.21",
     "daisyui": "^4.12.24",
+=======
+>>>>>>> f859783cb6e3d30e571260085a8540861c3d6e75
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+<<<<<<< HEAD
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17",
     "vite": "^6.3.3"
+=======
+    "vite": "^6.3.1"
+>>>>>>> f859783cb6e3d30e571260085a8540861c3d6e75
   }
 }

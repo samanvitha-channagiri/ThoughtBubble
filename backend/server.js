@@ -14,11 +14,18 @@ app.use(express.json());
 app.use(cookieParser())
 
 connectDB()
+<<<<<<< HEAD
 
 
 app.use('/',authRoutes)
 app.use('/',profileRoutes)
 app.use('/',entryRoutes)
+=======
+app.use('/',authRoutes)
+app.use('/',profileRoutes)
+app.use('/',entryRoutes)
+
+>>>>>>> f859783cb6e3d30e571260085a8540861c3d6e75
 app.get('/',(req,res)=>{
     res.send('Hello world')
 })

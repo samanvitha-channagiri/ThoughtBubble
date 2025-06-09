@@ -23,9 +23,14 @@ export const signup=async(req,res)=>{
     }
     const newUser=new User({name,email,password:hashedPassword})
    
+<<<<<<< HEAD
      const data=await  newUser.save()
    
      
+=======
+   
+  
+>>>>>>> f859783cb6e3d30e571260085a8540861c3d6e75
     
     return  res.json({userId:data._id,name:data.name,email:data.email})
 
